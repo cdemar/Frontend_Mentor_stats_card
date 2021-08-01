@@ -63,7 +63,7 @@ body {
 }
 
 .card__picture {
-  background-image: url(/../dist/images/image-header-mobile.jpg);
+  background-image: url(../../dist/images/image-header-mobile.jpg);
   height: 31.5vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -74,7 +74,7 @@ body {
 
 @media (min-width: 64em) {
   .card__picture {
-    background-image: url(/../dist/images/image-header-desktop.jpg);
+    background-image: url(../../dist/images/image-header-desktop.jpg);
     height: 52vh;
     border-radius: 0 1rem 1rem 0;
     -ms-grid-column: 2;
