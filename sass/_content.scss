@@ -14,7 +14,7 @@
   }
 
   &__picture {
-    background-image: url(../../dist/images/image-header-mobile.jpg);
+    background-image: url(./../../dist/images/image-header-mobile.jpg);
     height: 31.5vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -23,7 +23,7 @@
     overflow: hidden;
 
     @include breakpoint-up(med) {
-      background-image: url(../../dist/images/image-header-desktop.jpg);
+      background-image: url(./../../dist/images/image-header-desktop.jpg);
       height: 52vh;
       border-radius: 0 rem(16) rem(16) 0;
       grid-column: 2;
