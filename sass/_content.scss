@@ -1,0 +1,137 @@
+.card {
+  color: $white;
+  background-color: $dark-desaturated-blue;
+  border-radius: rem(16);
+  margin: rem(80) rem(30) rem(25);
+    
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+
+  @include breakpoint-up(med) {
+    margin: 0;
+    grid-template-columns: 39vw 35vw;
+  }
+
+  &__picture {
+    background-image: url(/../dist/images/image-header-mobile.jpg);
+    height: 31.5vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: rem(16) rem(16) 0 0;
+    overflow: hidden;
+
+    @include breakpoint-up(med) {
+      background-image: url(/../dist/images/image-header-desktop.jpg);
+      height: 52vh;
+      border-radius: 0 rem(16) rem(16) 0;
+      grid-column: 2;
+      grid-row: 1;
+    }    
+  }
+
+  &__overlay {
+    background-color: hsla(277, 64%, 61%, 0.25);
+    height: 31.5vh;
+
+    @include breakpoint-up(med) {
+      height: 63vh;
+    }  
+  }
+
+  &__content {
+    padding: 6vh 0;
+
+    @include breakpoint-up(med) {
+      padding: 0 200px 0 0;
+      display: inherit;
+      grid-column: 1;
+      grid-row: 1;
+      grid-template-areas:
+      'heading'
+      'txt'
+      'stats';
+    }
+  }
+
+  &__heading {
+    font-weight: $font-700; 
+    font-family: $inter;
+    padding: 0 5vw;
+
+    @include breakpoint-up(med) {
+      text-align: left;
+      padding: 0 0 rem(15) rem(80);
+      grid-area: heading;
+    }
+  }
+
+  &__highlight {
+    color: $solf-violet;
+  }
+
+  &__txt {
+    color: $transparent-white-1;
+    font-weight: $font-400; 
+    font-family: $inter;
+    line-height: 1.5;
+    padding: 2.4vh 6vw;
+
+    @include breakpoint-up(med) {
+      text-align: left;
+      padding: rem(15) rem(26) rem(45) rem(80);
+      grid-area: txt;
+    }
+  }
+
+  &__stats {
+    display: grid;
+    justify-content: center;
+    list-style-type: none;
+    grid-area: stats;
+
+    @include breakpoint-up(med) {
+      grid-template-columns: repeat(3, 1fr);
+      padding-left: rem(80);
+    }
+    
+    .stat {
+      padding-top: rem(25);
+      padding-bottom: rem(10);
+      font-size: rem(25);
+      font-weight: $font-700; 
+      font-family: $inter;
+
+      @include breakpoint-up(med) {
+        text-align: left;
+        padding-right: rem(40);
+      }
+
+      span {
+        font-size: rem(12);
+        color: $transparent-white-2;
+        text-transform: uppercase;
+        letter-spacing: rem(1.5);
+        font-weight: $font-400; 
+        font-family: $lexend-deca;
+      }
+    }
+  }
+}
+
+// footer
+
+.footer {
+  font-size: rem(11);
+  padding-bottom: rem(16);
+  
+  p {
+    padding-bottom: rem(3);
+  }
+
+  a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+  }
+}
