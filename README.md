@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./../dist/images/screenshot.pdf)
+![](/dist/images/screenshot.pdf)
 
 ### Links
 
