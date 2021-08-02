@@ -99,4 +99,4 @@ I definitely still want to focus more of my time with using grid, but also tryin
 - Twitter - [@thecdemar](https://twitter.com/thecdemar)
 
 ## Acknowledgments
-My family is the biggest inspiration for me to do these and to grow more as a programmer to make a better life for myself and for them. Besides that [Jessica Chan](https://www.youtube.com/watch?v=aoQ6S1a32j8&t=13825s)'s video from [freeCodeCamp.org](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ) youtube channel was also a large inspiration to not only practice my SCSS but also try a new way of programming by using grid.
+My family is the biggest inspiration for me to do these and to grow more as a programmer to make a better life for myself and for them. Besides that [Jessica Chan](https://www.youtube.com/watch?v=aoQ6S1a32j8&t=13825s)'s video on [freeCodeCamp.org](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ) YouTube channel was also a large inspiration to not only practice my SCSS but also try a new way of programming by using grid.
