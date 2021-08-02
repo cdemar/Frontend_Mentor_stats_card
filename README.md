@@ -16,8 +16,6 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -28,83 +26,77 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](./dist/images/screenshot.pdf)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution here](https://github.com/cdemar/Frontend_Mentor_stats_card)
+- Live Site URL: [live site here](https://cdemar.github.io/Frontend_Mentor_stats_card/)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
+- SCSS
+- Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Something that I have always struggled on is letting an image be shown when on the website, because it's different when I need to do it on my local computer. I also used SCSS for only the second time, but the first time was mainly copying and pasting from a website I used only CSS with.
 
-To see how you can add code snippets, see below:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+  <div class="card__picture">
+    <div class="card__overlay"></div>
+  </div>
 ```
+
+When live.
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.card__picture {
+  background-image: url(./../../dist/images/image-header-mobile.jpg);
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+When on my computer
+```css
+.card__picture {
+  background-image: url(./../dist/images/image-header-mobile.jpg);
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+Besides that I learned how to use grid. Below are a few examples I used.
+```css
+body {
+  display: -ms-grid;
+  display: grid;
+}
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+.card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I definitely still want to focus more of my time with using grid, but also trying to figure out when it is better to use grid vs. flexbox.
 
 ### Useful resources
 
-- [Example resource 1](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) - This was a great resorce when trying to learn about 'Grid'. This is a site I use often when wanting to learn something new.
-- [Example resource 2](https://css-tricks.com/snippets/css/complete-guide-grid/) - This website is similar to the one 
+- [Mozilla](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) - This was a great resource when trying to learn about 'Grid'. This is a site I use often when wanting to learn something new.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [CSS-Tricks](https://css-tricks.com/snippets/css/complete-guide-grid/) - This website is similar to Mozilla in the format of using it when needing to learn something new.
+
+- [SCSS](https://sass-lang.com/documentation/syntax) - I also got a lot of information from how to set up a lot of my SCSS in a strong way.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Website - [Cory D.](https://www.your-site.com)
+- Frontend Mentor - [@cdemar](https://www.frontendmentor.io/profile/cdemar)
+- Twitter - [@thecdemar](https://twitter.com/thecdemar)
 
 ## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+My family is the biggest inspiration for me to do these and to grow more as a programmer to make a better life for myself and for them. Besides that [Jessica Chan](https://www.youtube.com/watch?v=aoQ6S1a32j8&t=13825s)'s video from [freeCodeCamp.org](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ) youtube channel was also a large inspiration to not only practice my SCSS but also try a new way of programming by using grid.
