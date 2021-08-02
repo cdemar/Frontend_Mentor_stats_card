@@ -94,7 +94,7 @@ I definitely still want to focus more of my time with using grid, but also tryin
 
 ## Author
 
-- Website - [Cory D.](https://github.com/cdemar)
+- Website - [Cory D.] (https://cdemar.github.io/my_Web/)
 - Frontend Mentor - [@cdemar](https://www.frontendmentor.io/profile/cdemar)
 - Twitter - [@thecdemar](https://twitter.com/thecdemar)
 
